@@ -18,7 +18,7 @@ const PATH = './src/translations/';
 
 const SOURCE_LANG = { name: 'English', code: 'en' };
 const TARGET_LANG_NAMES = {
-  es: 'Spanish',
+  jp: 'Japanese',
   de: 'German',
   fr: 'French',
 };

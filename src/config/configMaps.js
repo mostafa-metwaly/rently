@@ -6,13 +6,13 @@ import defaultLocationSearches from './configDefaultLocationSearches';
 
 // Note: The mapboxAccessToken & googleMapsAPIKey come from map asset nowadays by default.
 //       To use this built-in configuration, you need to remove the overwrite from configHelper.js (mergeMapConfig func)
-export const mapboxAccessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
+// export const mapboxAccessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 export const googleMapsAPIKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
 // Choose map provider: 'mapbox', 'googleMaps'
 // Note: The mapProvider comes from map asset nowadays by default.
 //       To use this built-in configuration, you need to remove the overwrite from configHelper.js (mergeMapConfig func)
-export const mapProvider = 'mapbox';
+export const mapProvider = 'GOOGLE_MAPS';
 
 // The location search input can be configured to show default
 // searches when the user focuses on the input and hasn't yet typed
@@ -26,7 +26,7 @@ export const search = {
 
   // Distance in meters for calculating the bounding box around the
   // current location.
-  currentLocationBoundsDistance: 1000,
+  currentLocationBoundsDistance: 100,
 
   // This affects location search.
   // These "default locations" can be edited in the
@@ -47,7 +47,7 @@ export const search = {
   // Limit location autocomplete to a one or more countries
   // using ISO 3166 alpha 2 country codes separated by commas.
   // If you want to limit the autocomplete, uncomment this value:
-  // countryLimit: ['AU'],
+  countryLimit: ['JP'],
 };
 
 // When fuzzy locations are enabled, coordinates on maps are
